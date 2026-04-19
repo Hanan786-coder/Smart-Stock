@@ -3,6 +3,7 @@ package com.example.smartstock;
 import android.app.Application;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
+import com.example.smartstock.BuildConfig;
 
 public class SmartStockApp extends Application {
     @Override
