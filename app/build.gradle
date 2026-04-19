@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.secrets.gradle.plugin)
+}
+
+secrets {
+    propertiesFileName = "secrets.properties"
 }
 
 android {
@@ -29,6 +33,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 }
 
